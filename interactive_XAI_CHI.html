@@ -1,0 +1,174 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="utf-8">
+  <title>Interactivity x Explainability:<br>Toward Understanding How Interactivity Can Improve Computer Vision Explanations</title>
+
+  <meta name="author" content="<b>Indu Panigrahi</b>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<!-- COLOR OPTIONS: 84D66D for green, 942193 for plum, 64D639 for another green, FF9300 for orange -->
+
+<body style="font-family: Avenir;">
+  <!-- Lab logo -->
+  <div class="row" style="text-align:center;padding:0;padding-top:20;padding-bottom:0;margin:0">
+    <div class="container">
+      <img src="images/chi2025logo.png" height="200px" style="vertical-align:middle"> 
+    </div>
+  </div>
+
+  <!-- Authors -->
+<div class="container-fluid" style="text-align:center;">
+  <div class="row">
+    <h1><span style="font-size:40px;color:#333;font-weight:800">Interactivity x Explainability:<br>Toward Understanding How Interactivity Can Improve Computer Vision Explanations</span></h1>
+    <div class="authors">
+      <span style="font-size:18px"><a href="https://ind1010.github.io/" style="color:#1075bc" target="new">Indu Panigrahi</a></span>
+      &nbsp;
+      <span style="font-size:18px"><a href="https://www.cs.princeton.edu/~suhk/" style="color:#1075bc" target="new">Sunnie S. Y. Kim*</a></span>
+      &nbsp;
+      <span style="font-size:18px"><a href="https://a-liaqat.github.io/" style="color:#1075bc" target="new">Amna Liaqat*</a></span>
+      &nbsp;
+      <span style="font-size:18px"><a href="https://www.linkedin.com/in/rjinturkar/" style="color:#1075bc" target="new">Rohan Jinturkar</a></span>
+      &nbsp;
+      <span style="font-size:18px"><a href="https://www.cs.princeton.edu/~olgarus/" style="color:#1075bc" target="new">Olga Russakovsky</a></span>
+      &nbsp;
+      <span style="font-size:18px"><a href="https://ruthcfong.github.io/" style="color:#1075bc" target="new">Ruth Fong</a></span>
+      &nbsp;
+      <span style="font-size:18px"><a href="https://parastooabtahi.com/" style="color:#1075bc" target="new">Parastoo Abtahi</a></span>
+      <br>
+      <span style="font-size:18px">Princeton University, Princeton NJ 08544, USA </span>
+      <br>
+      <span style="font-size:18px">{indup, sunniesuhyoung, al0910, olgarus, ruthfong, parastoo}@princeton.edu, rohanj@alumni.princeton.edu<br><br></span>
+    </div>
+  </div>
+</div>
+
+</div>
+  
+&nbsp;
+&nbsp;
+
+<!-- Overview -->
+<div class="container">
+  <h2>Overview</h2>
+  <hr>
+  We conducted a qualitative case study with end-users of a real-world AI application to gain a nuanced understanding of explainable AI and trust.
+</div>
+  
+&nbsp;
+
+<div class="container">
+  <div class="row" style="text-align:center;padding:0;margin:0">
+
+    <!-- <div class="col-xs-6 col-xs-offset-0 text-center"> -->
+      <div style="width: 95%;height: 0;padding-bottom: 30%;position: relative;margin-left: auto;margin-right: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9UpFqSNbIdc?si=DZM9SkWTmyjeYpVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    <!-- </div> -->
+    
+  </div>
+ </div>
+
+ <!-- Icons -->
+<div class="container">
+  <div class="row" style="text-align:center;padding:0;margin:0">
+    <div class="col-lg-0 col-md-0 col-sm-0"></div>
+
+    <div class="col-xs-2 col-xs-offset-3 text-center">
+      <div class="service-box mt-5 mx-auto">
+        <a href="https://ind1010.github.io/data/interactivity_panigrahi_chiea25.pdf" target="_blank">
+          <i class="fa fa-4x fa-file-text-o text-primary mb-3"></i>
+        </a>
+        <h4 class="mb-3" style="font-size:14px">Extended Abstract</h4>
+      </div>
+    </div>
+
+    <div class="col-xs-2 text-center">
+      <div class="service-box mt-5 mx-auto">
+        <a href="https://ind1010.github.io/data/chiea25_panigrahi_interactivity_suppmat.pdf" target="_blank">
+          <i class="fa fa-4x fa-file-text-o text-primary mb-3"></i>
+        </a>
+        <h4 class="mb-3" style="font-size:14px">Supplemental Materials</h4>
+      </div>
+    </div>
+
+    <div class="col-xs-2 text-center">
+      <div class="service-box mt-5 mx-auto">
+        <a href="https://youtu.be/9UpFqSNbIdc?feature=shared" target="_blank">
+          <i class="fa fa-4x fa-youtube-play text-primary mb-3"></i>
+        </a>
+        <h4 class="mb-3" style="font-size:14px">3 min. Talk</h4>
+      </div>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-0 col-md-0 col-sm-0"></div>
+    
+    <!-- <div class="col-xs-2 col-xs-offset-3 text-center">
+      <div class="service-box mt-5 mx-auto">
+        <a href="..." target="_blank">
+          <i class="fa fa-4x fa-file-text-o text-primary mb-3"></i>
+        </a>
+        <h4 class="mb-3" style="font-size:14px">Thesis</h4>
+      </div>
+    </div> -->
+ 
+  </div>
+</div>
+  </div>
+</div>
+  
+<!-- &nbsp; -->
+
+<!-- <div class="container-fluid"></div> -->
+
+<!-- Abstract -->
+<div class="container">
+  <h2>Abstract</h2>
+  <hr>
+  Explanations for computer vision models are important tools for interpreting how the underlying models work. However, they are often presented in static formats, which pose challenges for users, including information overload, a gap between semantic and pixel-level information, and limited opportunities for exploration. We investigate interactivity as a mechanism for tackling these issues in three common explanation types: heatmap-based, concept-based, and prototype-based explanations. We conducted a study (N=24), using a bird identification task, involving participants with diverse technical and domain expertise. We found that while interactivity enhances user control, facilitates rapid convergence to relevant information, and allows users to expand their understanding of the model and explanation, it also introduces new challenges. To address these, we provide design recommendations for interactive computer vision explanations, including carefully selected default views, independent input controls, and constrained output spaces.
+</div>
+
+<!-- Citation -->
+<div class="container">
+  <h2>Citation</h2>
+  <hr>
+  <pre><code>
+    @inproceedings{panigrahi2025interactivity,
+      author = {Indu Panigrahi and Sunnie S. Y. Kim* and Amna Liaqat* and Rohan Jinturkar and Olga Russakovsky and Ruth Fong and Parastoo Abtahi},
+      title = {{Interactivity x Explainability}: Toward Understanding How Interactivity Can Improve Computer Vision Explanations},
+      booktitle = {Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA)},
+      year = {2025}
+    }
+  </code></pre>
+</div>
+  
+<!-- Acknowledgements -->
+<div class="container">
+  <h2>Acknowledgements</h2>
+  <hr>
+Firstly, we thank our participants for taking the time to participate in our study. We also thank Patrick Newcombe and Fengyi Guo for their help in identifying bird species and images of similar difficulty for the study. Lastly, we thank members of Princeton HCI and the Princeton Visual AI Lab, especially Vikram Ramaswamy, for providing feedback and resources throughout this project.<br><br>
+
+This material is based upon work supported by the National Science Foundation under grant No. 2145198 (OR) and the Graduate Research Fellowship (SK), as well as the  Princeton SEAS Howard B. Wentz, Jr. Junior Faculty Award (OR), the Princeton SEAS Innovation Fund (RF), and Open Philanthropy (RF, OR). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the sponsors.
+
+</div>
+
+<div class="container" >
+  <h2>Contact</h2>
+  <hr>
+  <div><a href="https://ind1010.github.io/" target="_blank">Indu Panigrahi</a> (indup@princeton.edu)</div>
+</div>
+
+<div id="footer">
+</div>
+<br>
+
+</body>
+</html>
