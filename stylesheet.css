@@ -177,3 +177,28 @@ html {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* for menu button for mobile */
+.menu-toggle { display: none; }
+
+@media (max-width: 1160px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        font-size: 24px;
+    }
+    .sidebar { display: none; }
+    .sidebar.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding-top: 50px;
+        background: #fff;
+        z-index: 1000;
+    }
+}

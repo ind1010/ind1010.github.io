@@ -23,7 +23,8 @@
 </div> -->
 
 <body>
-<aside class="sidebar">
+<button class="menu-toggle" aria-controls="sidebar" aria-expanded="false">☰</button> <!-- button for mobile -->
+<aside class="sidebar" id="sidebar">
             <!-- <h2>Table of Contents</h2> -->
             <ul>
                 <li><a href="#about">About</a></li>
@@ -824,6 +825,25 @@ Outstanding Student Teaching Award (Undergrad)</b>
       </td>
     </tr>
   </table> -->
+
+  <!-- for menu button for mobile -->
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('sidebar');
+    menuButton.addEventListener('click', () => {
+        const open = menu.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', open);
+    });
+    menu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            menu.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', false);
+        }
+    });
+});
+</script>
+
 </body>
 
 </html>
